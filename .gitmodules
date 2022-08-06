@@ -1,9 +1,8 @@
 [submodule "threadx"]
 	path = threadx
 	url = https://github.com/azure-rtos/threadx.git
-	branch = threadx-6.1.12_rel
-	
+	tag = v6.1.12_rel
 [submodule "STMLIB"]
 	path = STMLIB
 	url = https://github.com/AiYangSky/STMLIB.git
-	branch = main	
+	branch = main
