@@ -3,7 +3,7 @@
  * @Author         : Aiyangsky
  * @Date           : 2022-07-31 15:28:24
  * @LastEditors    : Aiyangsky
- * @LastEditTime   : 2022-08-07 12:21:48
+ * @LastEditTime   : 2022-08-07 17:15:10
  * @FilePath       : \SparrowSkyFlightControl\SRC\system\SparrowSkyFlightControl.c
  */
 
@@ -12,6 +12,8 @@
    byte pool, and block pool.  */
 
 #include "tx_api.h"
+
+#include "SEGGER_RTT.h"
 
 #define DEMO_STACK_SIZE         1024
 #define DEMO_BYTE_POOL_SIZE     9120
@@ -66,6 +68,8 @@ void    thread_6_and_7_entry(ULONG thread_input);
 
 int main()
 {
+
+    SEGGER_RTT_Init();
 
     /* Enter the ThreadX kernel.  */
     tx_kernel_enter();
@@ -225,6 +229,8 @@ UINT    status;
 
         /* Send message to queue 0.  */
         status =  tx_queue_send(&queue_0, &thread_1_messages_sent, TX_WAIT_FOREVER);
+
+        SEGGER_RTT_printf(0,"thread_1_counter = %d \n",thread_1_counter);
 
         /* Check completion status.  */
         if (status != TX_SUCCESS)
