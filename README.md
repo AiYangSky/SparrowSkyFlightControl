@@ -1,3 +1,11 @@
+<!--
+ * @Description    : 
+ * @Author         : Aiyangsky
+ * @Date           : 2022-08-07 17:19:26
+ * @LastEditors    : Aiyangsky
+ * @LastEditTime   : 2022-08-11 13:15:18
+ * @FilePath       : \SparrowSkyFlightControl\README.md
+-->
 # SparrowSkyFlightControl
 
     SparrowSkyFlightControl is a small quadrotor UAV flight control. It is developed based on STM32 and Azure RTOS Threadx.
@@ -39,3 +47,9 @@ $ cmake --build .build
 
     The development and adaptation of peripheral driver will be completed in the near future.
     At the same time, the compatibility processing from the test core board to the flight control board is completed.
+
+## 2022/8/11 v0.0.1
+
+    Add a parameter management module.
+    The issues with the MavLink microservice should be addressed in the next few days. 
+    The peripheral driver side needs to be temporarily shelved due to hardware issues.
