@@ -24,7 +24,7 @@ $ git clone https://github.com/AiYangSky/STMLIB.git --recursive
 
 ## Build 
 ```bash
-$ cmake -B .build -DCMAKE_TOOLCHAIN_FILE=cmake/cortex_m4.cmake -GNinja .
+$ cmake -B .build -DCMAKE_TOOLCHAIN_FILE=cmake/cortex_m4.cmake -GNinja 
 
 $ cmake --build .build
 ```

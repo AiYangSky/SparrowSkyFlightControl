@@ -7,3 +7,6 @@
 	path = STMLIB
 	url = https://github.com/AiYangSky/STMLIB.git
 	branch = main
+[submodule "SRC/moduldes/Parameters"]
+	path = SRC/moduldes/Parameters
+	url = https://github.com/AiYangSky/Parameters.git

@@ -11,7 +11,7 @@ set(VFP_FLAGS "-Wall -fdata-sections -ffunction-sections")
 set(SPEC_FLAGS "--specs=nosys.specs")
 
 file(GLOB LINKER_SCRIPT ${CMAKE_CURRENT_SOURCE_DIR}/SRC/system/*.ld)
-#message(${LINKER_SCRIPT})
+message(${LINKER_SCRIPT})
 set(CMAKE_EXE_LINKER_FLAGS "--specs=nano.specs -T${LINKER_SCRIPT} -Wl,-Map=${PROJECT_BINARY_DIR}/${PROJECT_NAME}.map,--cref -Wl,--gc-sections")
 
 add_definitions(
