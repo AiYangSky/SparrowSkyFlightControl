@@ -1,11 +1,3 @@
-<!--
- * @Description    : 
- * @Author         : Aiyangsky
- * @Date           : 2022-08-07 17:19:26
- * @LastEditors    : Aiyangsky
- * @LastEditTime   : 2022-08-11 13:15:18
- * @FilePath       : \SparrowSkyFlightControl\README.md
--->
 # SparrowSkyFlightControl
 
     SparrowSkyFlightControl is a small quadrotor UAV flight control. It is developed based on STM32 and Azure RTOS Threadx.
@@ -27,7 +19,7 @@ Install the following tools:
 ## Cloning the repo
 
 ```bash
-$ git clone https://github.com/AiYangSky/STMLIB.git --recursive
+$ git clone https://github.com/AiYangSky/SparrowSkyFlightControl.git --recursive
 ```
 
 ## Build 
