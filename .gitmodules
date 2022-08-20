@@ -10,3 +10,6 @@
 [submodule "SRC/moduldes/Parameters"]
 	path = SRC/moduldes/Parameters
 	url = https://github.com/AiYangSky/Parameters.git
+[submodule "SRC/moduldes/mavlink"]
+	path = SRC/moduldes/mavlink
+	url = https://github.com/AiYangSky/mavlink.git
