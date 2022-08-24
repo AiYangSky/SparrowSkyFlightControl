@@ -17,6 +17,11 @@ Install the following tools:
 * [GCC compilers for arm-none-eabi](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads)
 * [Ninja](https://ninja-build.org/)
 
+
+## Dependencies
+
+![dependency graph](doc/deps.png)
+ 
 ## Cloning the repo
 
 ```bash
