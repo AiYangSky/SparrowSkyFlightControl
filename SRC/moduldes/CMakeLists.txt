@@ -8,6 +8,7 @@ target_sources(${PROJECT_NAME}_moduldes
 )
 
 add_subdirectory(Parameters/src)
+add_subdirectory(mavlink/src)
 
 target_include_directories(${PROJECT_NAME}_moduldes
     PUBLIC
@@ -18,4 +19,5 @@ target_link_libraries(${PROJECT_NAME}_moduldes
     stm32lib
     threadx
     parameters
+    mavlink_microservices
 )

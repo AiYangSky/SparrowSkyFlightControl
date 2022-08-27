@@ -7,9 +7,10 @@ project(SparrowSkyFlightControl
 
 add_subdirectory(threadx)
 add_subdirectory(STMLIB)
-add_subdirectory(SRC/system)
+add_subdirectory(SRC/TOOLs)
 add_subdirectory(SRC/driver)
 add_subdirectory(SRC/moduldes)
+add_subdirectory(SRC/system)
 
 add_executable(${PROJECT_NAME}.elf
     SRC/system/${PROJECT_NAME}.c
@@ -21,6 +22,7 @@ target_link_libraries(${PROJECT_NAME}.elf -lm
     ${PROJECT_NAME}_system
     ${PROJECT_NAME}_drivers
     ${PROJECT_NAME}_moduldes
+    ${PROJECT_NAME}_tools
 )
 
 target_include_directories(${PROJECT_NAME}.elf PUBLIC
